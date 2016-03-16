@@ -28,12 +28,14 @@ Proxy Message:
 4,To run receiver, type “java receiver <filename> <listening_port> <sender_IP> <sender_port> <log_filename>”;
   * sender_IP is the IP of sender, NOT proxy;
   * sender_port is the port of sender, NOT proxy;
+  * filename is the file you want to write of the packets you received, this file will be created in the current directory;
   * For example: type “java receiver out.txt 20000 localhost 20001 logfiler.txt” in
     terminal;
 
 5,To run sender, type “java sender <filename> <remote_IP> <remote_port> <ack_port_num> <log_filename> <window_size>”;
   * remote_IP is the IP of receiver, NOT proxy;
   * remote_port is the IP of receiver, NOT proxy;
+  * filename if the file which you want to send, this file should be in the current directory;
   * For example, type “java sender testp localhost 20000 20001 logfiles.txt 5” in
     terminal;
 
